@@ -1,10 +1,12 @@
-## Wedding Invitation
+## OMDB Film directory
 
-Description: Wedding invitation web apps, invite guest by send link to your online wedding invitation.
+Description: OMDB film directory website application, you can search favorite film and look for detail about film you select it.
 
 ## Setup
 
-Follow below steps to run project
+Build with react 17.0.2 and nextjs 11.1.2.
+
+Follow below steps to run project,
 
 1. Clone repository
 2. Run `npm install` command to install all dependencies
