@@ -19,7 +19,7 @@ export default function ListMovieCard(props: ListMovieCardProps) {
         style={{ height: 300 }}
         onClick={() => doSetPoster(movie.Poster)}
       >
-        <Image src={movie.Poster} layout="fill" objectFit="cover" alt="" />
+        <Image src={movie.Poster === "N/A" ? "/null" : movie.Poster} layout="fill" objectFit="cover" alt="" />
       </button>
       <div className="p-4 flex flex-col h-32 justify-between">
         <p className="text-base">

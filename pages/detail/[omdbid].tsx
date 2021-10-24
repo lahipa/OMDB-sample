@@ -35,7 +35,7 @@ const Detail: NextPage<DetailProps> = (props: Partial<DetailProps>) => {
         ) : (
           <>
             <div className="relative" style={{ height: 444 }}>
-              <Image src={movie && movie.Poster ? movie.Poster : "/null"} width={300} height={444} alt="" />
+              <Image src={movie && movie.Poster ? movie.Poster !== "N/A" ?  movie.Poster : "/null" : "/null"} width={300} height={444} alt="" />
             </div>
 
             <div className="flex flex-col">

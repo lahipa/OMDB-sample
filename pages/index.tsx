@@ -125,7 +125,7 @@ const Home: NextPage<HomeProps> = (props: Partial<HomeProps>) => {
         </div>
       </main>
 
-      <Modal
+      {/* <Modal
         size="sm"
         open={!!poster}
         onClose={() => setPoster("")}
@@ -133,7 +133,7 @@ const Home: NextPage<HomeProps> = (props: Partial<HomeProps>) => {
         <div className="relative" style={{ height: 444 }}>
           <Image src={poster} layout="fill" objectFit="cover" alt="" />
         </div>
-      </Modal>
+      </Modal> */}
     </div>
   );
 };
