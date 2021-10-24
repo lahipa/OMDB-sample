@@ -17,7 +17,7 @@ export default function ListMovieCard(props: ListMovieCardProps) {
       <button
         className="relative outline-none bg-none"
         style={{ height: 300 }}
-        onClick={() => doSetPoster(movie.Poster)}
+        onClick={() => doSetPoster(movie.Poster !== "N/A" ? movie.Poster : "/null")}
       >
         <Image src={movie.Poster === "N/A" ? "/null" : movie.Poster} layout="fill" objectFit="cover" alt="" />
       </button>
